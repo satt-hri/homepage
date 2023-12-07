@@ -99,6 +99,10 @@ dl, ol, ul {
 	padding-bottom: 100px;
 }
 
+.pb-0 {
+	padding-bottom: 0px;
+}
+
 .pb-30 {
 	padding-bottom: 30px;
 }
@@ -117,6 +121,10 @@ dl, ol, ul {
 
 .pb-100 {
 	padding-bottom: 100px;
+}
+
+.pt-0 {
+	padding-top: 0px;
 }
 
 .pt-30 {
@@ -4002,7 +4010,7 @@ blockquote::after, .blockquote::after {
 	position: relative;
 	z-index: 1;
 	height: 400px;
-	background-image: url(../img/page-title-bg.jpg);
+	background-image: url(../img/pages/page-title-bg-recruit.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -4074,11 +4082,14 @@ blockquote::after, .blockquote::after {
 }
 
 .item-bg1 {
-	background-image: url(../img/page-title-bg-2.jpg);
+	background-image: url(../img/pages/page-title-bg-company.jpg);
 }
 
 .item-bg2 {
-	background-image: url(../img/page-title-bg-3.jpg);
+	background-image: url(../img/pages/page-title-bg-contact.jpg);
+}
+.item-bg3 {
+	background-image: url(../img/pages/page-title-bg-blog.jpg);
 }
 
 /**********************************
@@ -4457,7 +4468,7 @@ blockquote::after, .blockquote::after {
 	height: 750px;
 	min-height: 100vh;
 	padding: 100px 0;
-	background-image: url(../img/page-title-bg.jpg);
+	background-image: url(../img/pages/page-title-bg.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -5023,4 +5034,17 @@ blockquote::after, .blockquote::after {
 	color: #333333;
 	border-top: 1px solid #cfcfcf;
 	border-left: 1px solid #cfcfcf;
+}
+
+strong {
+    font-weight: bold;
+    color: #3366FF;
+}
+
+.overflow-ellipsis {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 设置最大行数为3 */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
 }
