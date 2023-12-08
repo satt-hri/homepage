@@ -5048,3 +5048,113 @@ strong {
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
 }
+.line-clamp-4{
+	-webkit-line-clamp: 4;
+}
+
+.dialog-default .dialog-content {
+  text-align: justify;
+}
+.dialog-default .dialog-header {
+  padding: 15px;
+  color: #FFFFFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#370b6f), color-stop(#00429b), color-stop(#006dba), color-stop(#0095ce), to(#2dbcdc));
+	background: linear-gradient(to bottom, #370b6f, #00429b, #006dba, #0095ce, #2dbcdc);
+}
+.dialog-default .dialog-header dl {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.dialog-default .dialog-header dl dt {
+  padding-top: 0.5em;
+  font-size: 0.8rem;
+}
+.dialog-default .dialog-header dl dd {
+  margin-bottom: 3px;
+  min-height: 1em;
+  font-size: 1.2rem;
+}
+.dialog-default .dialog-header .remodal-close {
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  color: #FFFFFF;
+  border-radius: 100%;
+  transition: background-color 0.25s;
+}
+.dialog-default .dialog-header .remodal-close::before {
+  width: 30px;
+  line-height: 30px;
+}
+.dialog-default .dialog-header .remodal-close:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.dialog-default .dialog-body {
+  padding: 20px 30px;
+}
+.dialog-default .dialog-btn {
+  clear: both;
+  padding: 10px 10px 20px 10px;
+}
+.dialog-default .dialog-btn > a {
+  margin: 0 5px;
+}
+.dialog-default p {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  height: calc(100vh - 300px);
+  overflow-y:auto;
+}
+
+.remodal {
+  padding: 0;
+  -webkit-transform: none;
+  transform: none;
+}
+
+.remodal.dialog-full {
+  max-width: 100%;
+}
+
+
+.remodal-close {
+  left: auto;
+  right: 0;
+}
+
+
+dl.list-label > dt {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 1px 15px;
+  color: #FFFFFF;
+  background-color: #607D8B;
+  border-radius: 20px;
+}
+dl.list-label > dd {
+  margin-bottom: 10px;
+}
+dl.list-label > dd p {
+  margin-bottom: 5px;
+}
+
+dl.list-table > dt {
+  float: left;
+  width: 100px;
+}
+dl.list-table > dd {
+  min-height: 2em;
+  margin-bottom: 5px;
+  padding-left: 110px;
+}
+dl.list-table.list-table-50 > dt {
+  width: 50px;
+}
+dl.list-table.list-table-50 > dd {
+  padding-left: 60px;
+}
+
+h3#title {
+    padding-right: 15px;
+}
