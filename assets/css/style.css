@@ -1190,7 +1190,7 @@ p:last-child {
 
 	.techvio-responsive-nav .techvio-responsive-menu.mean-container .navbar-nav {
 		overflow-y: scroll;
-		height: 300px;
+		height:255px;
 		-webkit-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
 		box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
 	}

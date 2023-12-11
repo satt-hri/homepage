@@ -147,16 +147,15 @@
 				<div class="col-lg-6">
 					<div class="overview-content">
 						<h6 class="sub-title">WHY TRUST US?</h6>
-						<h2>Achieve Digital Transformation For Your Retail Business Services</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							labore et dolore magna aliqua.</p>
+						<h2>他社と比較して、弊社の優位性は</h2>
+						<p>厚遇を提供し、自分に合った労働環境を見つけ、個人の成長をサポートし、最先端の技術と解決策を理解する手助けをします。</p>
 						<ul class="features-list">
-							<li> <span>Protect your Business</span></li>
-							<li> <span>Network Security</span></li>
-							<li> <span>Data Security</span></li>
-							<li> <span>Small Business Owners</span></li>
-							<li> <span>Running your Business</span></li>
-							<li> <span>Network Monitoring</span></li>
+							<li> <span>イノベーションと技術リーダーシップ</span></li>
+							<li> <span>チーム文化と社交活動</span></li>
+							<li> <span>従業員の成長とトレーニングの機会</span></li>
+							<li> <span>柔軟な労働環境</span></li>
+							<li> <span>競争力のある給与と福利厚生</span></li>
+							<li> <span>社会的責任と持続可能性</span></li>
 						</ul>
 					</div>
 				</div>
@@ -467,30 +466,30 @@
 
 			blogArray.forEach((element, index) => {
 				let temp = `<div class="col-lg-4 col-md-6">
-        <div class="blog-single-item">
-            <div class="blog-image">
-                    <img src="${element.picutre}" alt="image"> 
-            </div>
-            <div class="blog-description">
-                <ul class="blog-info">
-                    <li>
-                        <i class="bi bi-person-circle"></i>${element.author}
-                    </li>
-                    <li>
-                        <i class="bi bi-calendar-check"></i>${element.date}
-                    </li>
-                </ul>
-                <div class="blog-text">
-                    <h3>
-                        ${element.title}
-                    </h3>
-                    <p class="overflow-ellipsis ">${element.content}</p>
-                    <div class="blog-btn" data-item-id="${index}"> <a href="" class="read-more"><i class="bi bi-arrow-right-short"></i> Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>`;
+					<div class="blog-single-item">
+						<div class="blog-image">
+								<img src="${element.picutre}" alt="image"> 
+						</div>
+						<div class="blog-description">
+							<ul class="blog-info">
+								<li>
+									<i class="bi bi-person-circle"></i>${element.author}
+								</li>
+								<li>
+									<i class="bi bi-calendar-check"></i>${element.date}
+								</li>
+							</ul>
+							<div class="blog-text">
+								<h3>
+									${element.title}
+								</h3>
+								<p class="overflow-ellipsis ">${element.content}</p>
+								<div class="blog-btn" data-item-id="${index}"> <a href="" class="read-more"><i class="bi bi-arrow-right-short"></i> Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>`;
 				if (index < 3) {
 					$("#near-blog").append(temp);
 				}
