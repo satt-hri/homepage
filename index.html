@@ -133,10 +133,32 @@
 	</div>
 
 
-	<!-- Start Blog Section -->
-
-	<!-- End Home Section -->
-
+	<section class="overview-section section-padding">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="overview-image">
+						<img src="assets/img/choose-1.png" alt="image">
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="overview-content">
+						<h6 class="sub-title">The services we can provide?</h6>
+						<h2>提供できるサービス</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<ul class="features-list">
+							<li> <span>ビジネスコンサルティングサービス</span></li>
+							<li> <span>グローバルビジネス育成支援</span></li>
+							<li> <span>ＩＴソリューション開発</span></li>
+							<li> <span>Web系アプリケーションの開発</span></li>
+							<li> <span>日本及び中国市場へのマーケティング戦略支援</span></li>
+							<li> <span>ライフサイエンス業界向けIT企画、システム化計画・構築の支援</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!-- End Overview Section -->
 
@@ -193,62 +215,7 @@
 				<h2>主要取引先</h2>
 			</div>
 			<div class="partner-list">
-				<div class="partner-item">
-					<a href="#">
-						<img src="./assets/img/partner/client-1.png" alt="image">
-					</a>
-					<div class="name">楽天グループ株式会社 </div>
-				</div>
-				<div class="partner-item">
-					<a href="#">
-						<img src="./assets/img/partner/client-2.png" alt="image">
-					</a>
-					<div class="name">楽天グループ株式会社 </div>
-				</div>
-				<div class="partner-item">
-					<a href="#">
-						<img src="./assets/img/partner/client-3.png" alt="image">
-					</a>
-					<div class="name">楽天グループ株式会社 </div>
-				</div>
-				<div class="partner-item">
-					<a href="#">
-						<img src="./assets/img/partner/client-4.png" alt="image">
-					</a>
-					<div class="name">楽天グループ株式会社 </div>
-				</div>
-				<div class="partner-item">
-					<a href="#">
-						<img src="./assets/img/partner/client-5.png" alt="image">
-					</a>
-					<div class="name">楽天グループ株式会社 </div>
-				</div>
-				<div class="partner-item">
-					<a href="#">
-						<img src="./assets/img/partner/client-6.png" alt="image">
-					</a>
-					<div class="name">楽天グループ株式会社 </div>
-				</div>
-				<div class="partner-item">
-					<a href="#">
-						<img src="./assets/img/partner/client-7.png" alt="image">
-					</a>
-					<div class="name">楽天グループ株式会社 </div>
-				</div>
-				<div class="partner-item">
-					<a href="#">
-						<img src="./assets/img/partner/client-8.png" alt="image">
-					</a>
-					<div class="name">楽天グループ株式会社 </div>
-				</div>
-				<div class="partner-item">
-					<a href="#">
-						<img src="./assets/img/partner/client-9.png" alt="image">
-					</a>
-					<div class="name">楽天グループ株式会社 </div>
-				</div>
 			</div>
-		</div>
 	</section>
 	<!-- End Partner section -->
 
@@ -511,6 +478,53 @@
 
 				infoDialog.open()
 			})
+
+
+			const partnerArray = [
+				{
+					name: "カルピス株式会社",
+					picutre: "assets/img/partner/client-1.png"
+				},
+				{
+					name: "伊藤忠テクノソリューションズ株式会社(CTC)",
+					picutre: "assets/img/partner/client-2.png"
+				}, 
+				{
+					name: "株式会社ソルクシーズ（証券コード：4284）",
+					picutre: "assets/img/partner/client-3.png"
+				},
+				{
+					name: "コムチュア株式会社（証券コード：3844）",
+					picutre: "assets/img/partner/client-4.png"
+				},
+				{
+					name: "株式会社SHIFT（証券コード：3697）",
+					picutre: "assets/img/partner/client-5.png"
+				},
+				{
+					name: "SATT株式会社(学校法人 駿河台学園グループ)",
+					picutre: "assets/img/partner/client-6.png"
+				},
+				{
+					name: "パーソルプロセス＆テクノロジー株式会社",
+					picutre: "assets/img/partner/client-7.png"
+				},
+				{
+					name: "グリーンブルー株式会社",
+					picutre: "assets/img/partner/client-8.png"
+				}
+			];
+
+			partnerArray.forEach((element, index) => {
+				let temp = `<div class="partner-item">
+					<a href="#">
+						<img src="${element.picutre}" alt="image">
+					</a>
+					<div class="name">${element.name}</div>
+				</div>`;
+				$(".partner-list").append(temp);
+
+			});
 
 		});
 	</script>
