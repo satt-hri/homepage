@@ -117,7 +117,7 @@
 	</div>
 
 	<!-- Start About Section -->
-	<section class="about-area bg-grey section-padding pt-5 pb-5" id="section0">
+	<section class="about-area  section-padding pt-5 pb-5" id="section0">
 		<div class="container">
 			<div class="row d-flex align-items-center">
 				<div class="col-md-12">
@@ -230,7 +230,7 @@
 	</section>
 
 
-	<section class="contact-info-wrapper bg-grey pt-5 pb-5" id="section2">
+	<section class="contact-info-wrapper pt-5 pb-5" id="section2">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -280,7 +280,17 @@
 			</div>
 		</div>
 	</section>
-
+	<!-- Start Partner section -->
+	<section class="partner-section pt-100 pt-5 pb-5">
+		<div class="container">
+			<div class="partner-title">
+				<h6 class="sub-title">retained skills</h6>
+				<h2>保有する技術</h2>
+			</div>
+			<div class="skill-list row justify-content-start">
+			</div>
+	</section>
+	<!-- End Partner section -->
 	<!-- Start Footer & Subscribe Section -->
 	<section class="footer-subscribe-wrapper">
 
@@ -409,7 +419,162 @@
 	<script src="assets/js/wow.min.js"></script>
 	<!-- Main JS -->
 	<script src="assets/js/main.js"></script>
+	<script>
+		$(function(){
+			const skillArray = [
+				{
+					categroy: "対応プログラム言語",
+					list: [{
+						name: "C/C++",
+						picutre: "assets/img/technology/technology-bnr27.png"
+					},
+					{
+						name: "Java",
+						picutre: "assets/img/technology/technology-bnr28.png"
+					},
+					{
+						name: "C#",
+						picutre: "assets/img/technology/technology-bnr29.png"
+					},
+					{
+						name: "Python",
+						picutre: "assets/img/technology/technology-bnr30.png"
+					},
+					{
+						name: "TypeScript",
+						picutre: "assets/img/technology/technology-bnr32.png"
+					},
+					{
+						name: "PHP",
+						picutre: "assets/img/technology/technology-bnr33.png"
+					},
+					{
+						name: "Ruby",
+						picutre: "assets/img/technology/technology-bnr34.png"
+					},
+					{
+						name: "ASP",
+						picutre: "assets/img/technology/technology-bnr37.png"
+					},
+					{
+						name: "Objective-C",
+						picutre: "assets/img/technology/technology-bnr39.png"
+					}]
+				},{
+					categroy: "フロントエンドフレームワーク",
+					list: [{
+						name: "React.jS",
+						picutre: "assets/img/technology/technology-bnr01.png"
+					},
+					{
+						name: "AngularJS",
+						picutre: "assets/img/technology/technology-bnr02.png"
+					},
+					{
+						name: "Vue.js",
+						picutre: "assets/img/technology/technology-bnr03.png"
+					},
+					{
+						name: "Backbone.js",
+						picutre: "assets/img/technology/technology-bnr04.png"
+					},
+					{
+						name: "Next.js",
+						picutre: "assets/img/technology/technology-bnr05.png"
+					},
+					{
+						name: "Nuxt.js",
+						picutre: "assets/img/technology/technology-bnr06.png"
+					}]
+				},{
+					categroy: "バックエンドフレームワーク",
+					list: [{
+						name: "Express.js",
+						picutre: "assets/img/technology/technology-bnr07.png"
+					},
+					{
+						name: "Laravel",
+						picutre: "assets/img/technology/technology-bnr08.png"
+					},
+					{
+						name: "Django",
+						picutre: "assets/img/technology/technology-bnr09.png"
+					},
+					{
+						name: "Nodejs",
+						picutre: "assets/img/technology/technology-bnr10.png"
+					},
+					{
+						name: "Ruby on Rails",
+						picutre: "assets/img/technology/technology-bnr11.png"
+					},
+					{
+						name: "Spring Boot",
+						picutre: "assets/img/technology/technology-bnr12.png"
+					},
+					{
+						name: "Spring Cloud",
+						picutre: "assets/img/technology/technology-bnr13.png"
+					}]
+				},{
+					categroy: "インフラ",
+					list: [{
+						name: "AWS",
+						picutre: "assets/img/technology/technology-bnr14.png"
+					},
+					{
+						name: "GCP",
+						picutre: "assets/img/technology/technology-bnr15.png"
+					},
+					{
+						name: "Azure",
+						picutre: "assets/img/technology/technology-bnr16.png"
+					}]
+				},{
+					categroy: "データベース",
+					list: [{
+						name: "MySQL",
+						picutre: "assets/img/technology/technology-bnr17.png"
+					},
+					{
+						name: "SQL Server",
+						picutre: "assets/img/technology/technology-bnr18.png"
+					},
+					{
+						name: "Oracle",
+						picutre: "assets/img/technology/technology-bnr19.png"
+					},{
+						name: "PostgreSQL",
+						picutre: "assets/img/technology/technology-bnr20.png"
+					},
+					{
+						name: "Redis",
+						picutre: "assets/img/technology/technology-bnr21.png"
+					},
+					{
+						name: "MongoDB",
+						picutre: "assets/img/technology/technology-bnr22.png"
+					}]
+				}];
 
+			skillArray.forEach((element, i) => {
+				$(".skill-list").append(`<h5 class="pt-3">${element.categroy}</h5><hr class="col-12">`);
+				element.list.forEach((child, j) => {
+					let temp = `<div class="col-md-2 col-6 ">
+									<div class="text-center">
+										<a href="#!">
+											<img src="${child.picutre}" alt="image">
+										</a>
+										<span class="">${child.name}</span>
+									</div>
+								</div>`;
+					$(".skill-list").append(temp);
+				})
+
+
+			});
+		})
+	</script>
 </body>
 
 </html>
