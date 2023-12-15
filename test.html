@@ -2,44 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    .custom-table {
-      background: linear-gradient(to right, #007bff, #0056b3); /* 渐变蓝色背景 */
-      color: #fff; /* 白色文字 */
-    }
-
-    .custom-table th,
-    .custom-table td {
-      border: 1px solid #dee2e6; /* 表格边框颜色 */
-      padding: 8px;
-      text-align: center;
+    .scrolling-window {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      position: fixed;
+      top: 50%;
+      transition: transform 0.5s ease-in-out;
     }
   </style>
-  <title>Bootstrap Table Example</title>
 </head>
 <body>
+  <div id="target" style="height: 200vh;"> <!-- 添加足够的高度以进行滚动 -->
+    <!-- 页面其他内容 -->
 
-<div class="container mt-5">
-  <table class="table custom-table">
-    <thead>
-      <tr>
-        <th rowspan="2">Cell 1</th>
-        <th>Cell 2</th>
-        <th>Cell 3</th>
-      </tr>
-      <tr>
-        <th>Cell 4</th>
-        <th>Cell 5</th>
-      </tr>
-    </thead>
-  </table>
-</div>
+    <!-- 滚动窗口 -->
+    <div class="scrolling-window"></div>
+  </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // JavaScript 代码
+    const scrollingWindow = document.querySelector('.scrolling-window');
+    const targetElement = document.getElementById('target');
 
+    function getRandomPosition() {
+      const maxY = targetElement.clientHeight - scrollingWindow.clientHeight;
+
+      const randomY = Math.floor(Math.random() * maxY);
+
+      return { y: randomY };
+    }
+
+    function animateScroll() {
+      const position = getRandomPosition();
+      scrollingWindow.style.transform = `translateY(${position.y}px)`;
+
+      setTimeout(animateScroll, 2000); // 设置每两秒执行一次
+    }
+
+    animateScroll();
+
+    // 如果您想要在点击时进行平滑滚动，可以使用以下 JavaScript 代码
+    scrollingWindow.addEventListener('click', function() {
+      const position = getRandomPosition();
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  </script>
 </body>
 </html>
