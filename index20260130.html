@@ -1,0 +1,962 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Title -->
+	<title>イノベークス株式会社</title>
+	<meta name="keywords"
+		content="イノベークス株式会社　コンサルティング　中国　ソフト　何建強　何　建強（カ　ケンキョウ）　人材育成　オフショア開発　ＩＴソリューション　中国ビジネス育成支援　ＩＴソリューション開発　日中ビジネス　アウトソーシング　ゴルフビジネス　ゴルフビジネスコンサルティング　環境保全　省エネルギー">
+	<meta name="description" content="イノベークス株式会社">
+	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="assets/img/favicon.ico" />
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<!-- Bootstrap Min CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Animate Min CSS -->
+	<link rel="stylesheet" href="assets/css/animate.min.css">
+	<!-- FlatIcon CSS -->
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+	<!-- Font Awesome Min CSS -->
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css">
+	<!-- Bootstrap Icon CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+	<!-- Mean Menu CSS -->
+	<link rel="stylesheet" href="assets/css/meanmenu.css">
+	<!-- Magnific Popup Min CSS -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+	<!-- Remodal CSS -->
+	<link rel="stylesheet" href="assets/css/remodal.css">
+	<link rel="stylesheet" href="assets/css/remodal-default-theme.css">
+	<!-- Swiper Min CSS -->
+	<link rel="stylesheet" href="assets/css/swiper.min.css">
+	<!-- Owl Carousel Min CSS -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<!-- Style CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- AOS Animation CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<!-- Custom Animation CSS -->
+	<style>
+		/* 浮动动画 */
+		@keyframes float {
+			0%, 100% { transform: translateY(0px); }
+			50% { transform: translateY(-20px); }
+		}
+
+		@keyframes float-slow {
+			0%, 100% { transform: translateY(0px) rotate(0deg); }
+			50% { transform: translateY(-10px) rotate(2deg); }
+		}
+
+		/* 脉冲动画 */
+		@keyframes pulse-soft {
+			0%, 100% { transform: scale(1); opacity: 1; }
+			50% { transform: scale(1.05); opacity: 0.9; }
+		}
+
+		/* 渐变背景动画 */
+		@keyframes gradient-shift {
+			0% { background-position: 0% 50%; }
+			50% { background-position: 100% 50%; }
+			100% { background-position: 0% 50%; }
+		}
+
+		/* 文字淡入动画 */
+		@keyframes fade-in-up {
+			from {
+				opacity: 0;
+				transform: translateY(30px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		/* 表格行悬停效果 */
+		.table tbody tr {
+			transition: all 0.3s ease;
+		}
+
+		.table tbody tr:hover {
+			background-color: rgba(123, 104, 238, 0.1) !important;
+			transform: translateX(5px);
+		}
+
+		/* 特性列表项动画 */
+		.features-list li {
+			transition: all 0.3s ease;
+			position: relative;
+			padding-left: 0;
+		}
+
+		.features-list li:hover {
+			transform: translateX(10px);
+			color: #7b68ee;
+		}
+
+		.features-list li::before {
+			content: '✓';
+			position: absolute;
+			left: -20px;
+			opacity: 0;
+			transition: all 0.3s ease;
+			color: #7b68ee;
+			font-weight: bold;
+		}
+
+		.features-list li:hover::before {
+			opacity: 1;
+			left: -15px;
+		}
+
+		/* 按钮悬停增强效果 */
+		.default-btn-one, .default-btn-two {
+			transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+		}
+
+		.default-btn-one:hover, .default-btn-two:hover {
+			transform: translateY(-3px) scale(1.02);
+			box-shadow: 0 10px 30px rgba(123, 104, 238, 0.4) !important;
+		}
+
+		/* 导航链接下划线动画 */
+		.navbar-nav .nav-link {
+			position: relative;
+			transition: color 0.3s ease;
+		}
+
+		.navbar-nav .nav-link::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 0;
+			height: 2px;
+			background: linear-gradient(90deg, #7b68ee, #00d4ff);
+			transition: all 0.3s ease;
+			transform: translateX(-50%);
+		}
+
+		.navbar-nav .nav-link:hover::after {
+			width: 100%;
+		}
+
+		/* Banner图片浮动效果 */
+		.banner-image img {
+			animation: float 6s ease-in-out infinite;
+		}
+
+		/* 创意形状动画 */
+		.creative-shape img {
+			animation: float-slow 8s ease-in-out infinite;
+		}
+
+		/* 标题文字动画 */
+		.main-banner-content h1 {
+			animation: fade-in-up 1s ease-out;
+		}
+
+		.main-banner-content p {
+			animation: fade-in-up 1s ease-out 0.3s both;
+		}
+
+		.banner-btn {
+			animation: fade-in-up 1s ease-out 0.6s both;
+		}
+
+		/* Section标题装饰动画 */
+		.section-title h2,
+		.partner-title h2,
+		.overview-content h2 {
+			position: relative;
+			display: inline-block;
+		}
+
+		.section-title h2::after,
+		.partner-title h2::after,
+		.overview-content h2::after {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			width: 60px;
+			height: 3px;
+			background: linear-gradient(90deg, #7b68ee, #00d4ff);
+			border-radius: 2px;
+			transition: width 0.4s ease;
+		}
+
+		.section-title:hover h2::after,
+		.partner-title:hover h2::after,
+		.overview-content:hover h2::after {
+			width: 100%;
+		}
+
+		/* 子标题动画 */
+		.sub-title {
+			position: relative;
+			display: inline-block;
+			padding-left: 15px;
+		}
+
+		.sub-title::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 4px;
+			height: 20px;
+			background: linear-gradient(180deg, #7b68ee, #00d4ff);
+			border-radius: 2px;
+		}
+
+		/* 图片悬停缩放效果 */
+		.overview-image img,
+		.overview-image-2 img {
+			transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		}
+
+		.overview-image:hover img,
+		.overview-image-2:hover img {
+			transform: scale(1.05) rotate(2deg);
+		}
+
+		/* Footer链接动画 */
+		.footer-links li a {
+			transition: all 0.3s ease;
+			position: relative;
+			display: inline-block;
+		}
+
+		.footer-links li a:hover {
+			color: #7b68ee !important;
+			transform: translateX(5px);
+		}
+
+		/* 联系信息图标动画 */
+		.footer-info-contact i {
+			transition: all 0.3s ease;
+		}
+
+		.footer-info-contact:hover i {
+			transform: scale(1.2) rotate(10deg);
+			color: #7b68ee;
+		}
+
+		/* 回到顶部按钮动画 */
+		.go-top {
+			transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+		}
+
+		.go-top:hover {
+			transform: translateY(-5px) scale(1.1);
+			box-shadow: 0 10px 30px rgba(123, 104, 238, 0.5) !important;
+		}
+
+		/* Logo悬停效果 */
+		.logo img, .navbar-brand img {
+			transition: all 0.3s ease;
+		}
+
+		.logo:hover img, .navbar-brand:hover img {
+			transform: scale(1.05);
+		}
+
+		/* 表格头部动画 */
+		.thead-dark th {
+			background: linear-gradient(135deg, #7b68ee 0%, #6b5ce7 100%) !important;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.thead-dark th::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -100%;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+			transition: left 0.5s ease;
+		}
+
+		.thead-dark:hover th::after {
+			left: 100%;
+		}
+
+		/* 预加载器增强 */
+		.preloader {
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		}
+
+		.loader .box {
+			animation: pulse-soft 1.5s ease-in-out infinite;
+		}
+
+		/* 响应式动画调整 */
+		@media (max-width: 768px) {
+			.banner-image img {
+				animation: none;
+			}
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Start Preloader Section -->
+	<div class="preloader">
+		<div class="loader">
+			<div class="shadow"></div>
+			<div class="box"></div>
+		</div>
+	</div>
+	<!-- End Preloader Section -->
+
+	<!-- Start Navbar Section -->
+	<div class="navbar-area">
+		<div class="techvio-responsive-nav">
+			<div class="container">
+				<div class="techvio-responsive-menu">
+					<div class="logo">
+						<a href="index.html">
+							<img src="./assets/img/logo.png" class="white-logo" alt="logo">
+							<img src="./assets/img/logo-black.png" class="black-logo" alt="logo">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="techvio-nav">
+			<div class="container">
+				<nav class="navbar navbar-expand-md navbar-light">
+					<a class="navbar-brand" href="index.html">
+						<img src="./assets/img/logo.png" class="white-logo" alt="logo">
+						<img src="./assets/img/logo-black.png" class="black-logo" alt="logo">
+					</a>
+					<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a href="index.html" class="nav-link">ホーム</a>
+							</li>
+							<li class="nav-item">
+								<a href="company.html" class="nav-link">会社案内 </a>
+							</li>
+							<li class="nav-item">
+								<a href="recruit.html" class="nav-link">採用情報</a>
+							</li>
+							<li class="nav-item">
+								<a href="blog.html" class="nav-link">ニュースリリース </a>
+							</li>
+							<li class="nav-item">
+								<a href="contact.html" class="nav-link">お問い合わせ</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<!-- End Navbar Section -->
+
+	<!-- Start Home Section -->
+	<div class="home-section">
+		<div class="d-table">
+			<div class="d-table-cell">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6 col-md-12">
+							<div class="main-banner-content" data-aos="fade-right" data-aos-duration="1000">
+								<h1>新しい価値の創造、クライアントの成功、会社の成功、社員の成功</h1>
+								<p>当社社名のINNOVACESS(イノベークス）は、InnovationとSuccessの造語で、「新しい価値を創造し、クライアントの成功、会社の成功、社員の成功を実現する」を表現したものでございます
+								</p>
+								<div class="banner-btn">
+									<a class="default-btn-one" href="recruit.html">募集 <span></span></a>
+									<a class="default-btn-two" href="contact.html">お問い合わせ<span></span></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12">
+							<div class="banner-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+								<img src="./assets/img/home-font.png" alt="image">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="creative-shape">
+			<img src="./assets/img/home-bottom-shape.png" alt="svg shape">
+		</div>
+	</div>
+
+
+	<section class="overview-section section-padding" data-aos="fade-up" data-aos-duration="1000">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="overview-image" data-aos="fade-right" data-aos-duration="1000">
+						<img src="assets/img/choose-1.png" alt="image">
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="overview-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+						<h6 class="sub-title">The services we can provide?</h6>
+						<h2>提供できるサービス</h2>
+						<p>社長は慶應義塾⼤学⼤学院を卒業後、伊藤忠テクノソリューションズ（CTC）、⽇本IBM、プライスウォーターハウスク
+							ーパース（PwC）を経験し、コンサルティングに豊富な実績を持っています。</p>
+						<ul class="features-list">
+							<li> <span>ビジネスコンサルティングサービス</span></li>
+							<li> <span>グローバルビジネス育成支援</span></li>
+							<li> <span>ＩＴソリューション開発</span></li>
+							<li> <span>Web系アプリケーションの開発</span></li>
+							<li> <span>日本及び中国市場へのマーケティング戦略支援</span></li>
+							<li> <span>ライフサイエンス業界向けIT企画、システム化計画・構築の支援</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- End Overview Section -->
+
+	<!-- Start Overview Section -->
+	<section class="overview-section pt-5 pb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="overview-content">
+						<h6 class="sub-title">WHY TRUST US?</h6>
+						<h2>他社と比較して、弊社の優位性は</h2>
+						<p>厚遇を提供し、自分に合った労働環境を見つけ、個人の成長をサポートし、最先端の技術と解決策を理解する手助けをします。</p>
+						<ul class="features-list">
+							<li> <span>イノベーションと技術リーダーシップ</span></li>
+							<li> <span>チーム文化と社交活動</span></li>
+							<li> <span>従業員の成長とトレーニングの機会</span></li>
+							<li> <span>柔軟な労働環境</span></li>
+							<li> <span>競争力のある給与と福利厚生</span></li>
+							<li> <span>社会的責任と持続可能性</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="overview-image-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+						<img src="./assets/img/choose-2.png" alt="image">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Overview Section -->
+	<section class="blog-section bg-grey pt-5 pb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+		<div class="container">
+			<div class="row" id="near-blog">
+				<div class="col-md-12">
+					<div class="section-title" data-aos="fade-up" data-aos-duration="800">
+						<h6 class="sub-title">Blog & Article</h6>
+						<h2>最近のブログ</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Start Partner section -->
+	<section class="partner-section pt-100 pt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+		<div class="container">
+			<div class="partner-title" data-aos="fade-up" data-aos-duration="800">
+				<h6 class="sub-title">Experience and Achievements of Our Team Members</h6>
+				<h2>弊社メンバーの経験・実績（抜粋）</h2>
+			</div>
+			<table class="table table-bordered table-striped text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+				<thead class="thead-dark text-center custom-table ">
+					<tr>
+						<th scope="col" rowspan="2">番号</th>
+						<th scope="col" rowspan="2">プロジェクト</th>
+						<th scope="col" rowspan="2">業界</th>
+						<th scope="col" colspan="3">領域</th>
+					</tr>
+					<tr>
+						<th scope="col">コンサル</th>
+						<th scope="col">SI</th>
+						<th scope="col">中国関連</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">1</th>
+						<td class="text-start">⼤⼿航空会社操縦士・客室乗務員管理システム構築</td>
+						<td>航空</td>
+						<td></td>
+						<td>○</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">2</th>
+						<td class="text-start">中堅学校法人の学習管理システム構築</td>
+						<td>学校</td>
+						<td></td>
+						<td>○</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">3</th>
+						<td class="text-start">大手自動車メーカの運用プロセス改善</td>
+						<td>自動車</td>
+						<td>○</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">4</th>
+						<td class="text-start">大手通信企業のプロジェクトマネジメント強化策の策定</td>
+						<td>通信</td>
+						<td>○</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">5</th>
+						<td class="text-start">大手飲料メーカの中国マーケティング戦略の策定</td>
+						<td>飲料</td>
+						<td>○</td>
+						<td></td>
+						<td>○</td>
+					</tr>
+					<tr>
+						<th scope="row">6</th>
+						<td class="text-start">自治体向けの環境情報管理システム構築</td>
+						<td>公共</td>
+						<td></td>
+						<td>○</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">7</th>
+						<td class="text-start">大手ガラス・土石製品メーカのVBマイグレーション支援</td>
+						<td>製造</td>
+						<td></td>
+						<td>○</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">8</th>
+						<td class="text-start">大手Sier健保システム構築支援</td>
+						<td>IT</td>
+						<td></td>
+						<td>○</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">9</th>
+						<td class="text-start">大手銀行投資信託システム構築</td>
+						<td>銀行</td>
+						<td></td>
+						<td>○</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">10</th>
+						<td class="text-start">中堅建機リースのリース業務システム構築</td>
+						<td>建機</td>
+						<td></td>
+						<td>○</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+	</section>
+	<style>
+		.custom-table th,
+		.custom-table td {
+			border: 1px solid #dee2e6;
+			/* 表格边框颜色 */
+			padding: 8px;
+			text-align: center;
+			background: #7b68ee;
+			color: #fff;
+			/* 白色文字 */
+			font-size: large;
+			font-weight: bold;
+		}
+	</style>
+	<!-- Start Partner section -->
+	<section class="partner-section pt-100 pt-5">
+		<div class="container">
+			<div class="partner-title" data-aos="fade-up" data-aos-duration="800">
+				<h6 class="sub-title">Major Clients</h6>
+				<h2>主要取引先</h2>
+			</div>
+			<div class="partner-list justify-content-center">
+			</div>
+	</section>
+
+
+
+	<!-- Start Footer & Subscribe Section -->
+	<section class="footer-subscribe-wrapper" data-aos="fade-up" data-aos-duration="1000">
+
+		<!-- Start Footer Section -->
+		<div class="footer-area ptb-100">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="single-footer-widget">
+							<a class="footer-logo" href="#">
+								<img src="./assets/img/logo.png" class="white-logo" alt="logo">
+							</a>
+							<p>当社社名のINNOVACESS(イノベークス）は、InnovationとSuccessの造語で、「新しい価値を創造し、クライアントの成功、会社の成功、社員の成功を実現する」を表現したものでございます
+							</p>
+							<ul class="footer-social">
+								<li>
+									<a href="#"> <i class="fab fa-facebook-f"></i></a>
+								</li>
+								<li>
+									<a href="#"> <i class="fab fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="#"> <i class="fab fa-youtube"></i></a>
+								</li>
+								<li>
+									<a href="#"> <i class="fab fa-linkedin"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6">
+						<div class="single-footer-widget">
+							<div class="footer-heading">
+								<h3 data-aos="fade-up" data-aos-duration="600">企業情報</h3>
+							</div>
+							<ul class="footer-quick-links">
+								<li><a href="company.html#section0">トップメッセージ</a></li>
+								<li><a href="company.html#section1">会社概要</a></li>
+								<li><a href="company.html#section2">経営理念・方針</a></li>
+								<li><a href="blog.html">ニュースリリース</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6">
+						<div class="single-footer-widget">
+							<div class="footer-heading">
+								<h3 data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">募集</h3>
+							</div>
+							<ul class="footer-quick-links">
+								<li><a href="recruit.html#section0">採用担当</a></li>
+								<li><a href="recruit.html#section1">募集要項</a></li>
+								<li><a href="contact.html">お問い合わせ</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6">
+						<div class="single-footer-widget">
+							<div class="footer-heading">
+								<h3 data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">連絡情報</h3>
+							</div>
+							<div class="footer-info-contact" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+								<i class="flaticon-phone-call"></i>
+								<h3>Phone</h3>
+								<span><a href="tel:03-5652-8018">TEL 03<div class="footer-info-contact" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">a></span>
+							</div>
+							<div class="footer-info-contact">
+								<i class="flaticon-envelope"></i<div class="footer-info-contact" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400"><span><a href="mailto:info@innovacess.com">info@innovacess.com</a></span>
+							</div>
+							<div class="footer-info-contact">
+								<i class="flaticon-placeholder"></i>
+								<h3>Address</h3>
+								<span> 〒103-0013 東京都中央区日本橋人形町2丁目15-16 高道ビル6F</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Footer Section -->
+	</section>
+	<!-- End Footer & Subscribe Section -->
+
+	<!-- Start Copy Right Section -->
+	<div class="copyright-area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="overview-image" data-aos="fade-right" data-aos-duration="1000">
+					<p><i class="far fa-copyright"></i> Copyright INNOVACESS Co., LTD. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Copy Right Section -->
+
+	<!-- Start Go Top Section -->
+	<div class="go-top">
+		<i class="fas fa-chevron-up"></i>
+		<i class="fas fa-chevron-up"></i>
+	</div>
+	<!-- End Go Top Section -->
+
+	<div class="dialog-default" data-remodal-id="dialog-info">
+		<div id="dialog-info-content" class="dialog-content">
+			<div class="dialog-header">
+				<button id="close_info" class="remodal-close" data-remodal-action="close"></button>
+				<h3 id="title">社員旅行</h3>
+				<dl class="list-table list-table-50">
+					<dt class="col-6">日付</dt>
+					<dd id="date">2023年12月08日</dd>
+					<dt>作成者</dt>
+					<dd id="atuhor">櫻</dd>
+				</dl>
+			</div>
+			<div class="dialog-body plane-html">
+				<div id="msg" class="msg">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery Min JS -->
+	<script src="./assets/js/jquery.min.js"></script>
+	<!-- Popper Min JS -->
+	<script src="./assets/js/popper.min.js"></script>
+	<!-- Bootstrap Min JS -->
+	<script src="./assets/js/bootstrap.bundle.min.js"></script>
+	<!-- Mean Menu JS  -->
+	<script src="./assets/js/jquery.meanmenu.js"></script>
+	<!-- Appear Min JS -->
+	<script src="./assets/js/jquery.appear.min.js"></script>
+	<!-- CounterUp Min JS -->
+	<script src="./assets/js/jquery.waypoints.min.js"></script>
+	<script src="./assets/js/jquery.counterup.min.js"></script>
+	<!-- Owl Carousel Min JS -->
+	<script src="./assets/js/owl.carousel.min.js"></script>
+	<!-- Magnific Popup Min JS -->
+	<script src="./assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- Isotope Min JS -->
+	<script src="./assets/js/isotope.pkgd.min.js"></script>
+	<!-- Swiper Min JS -->
+	<script src="./assets/js/swiper.min.js"></script>
+
+	<script src="./assets/js/remodal.min.js"></script>
+	<!-- WOW Min JS -->
+	<!-- <script src="./assets/js/wow.min.js"></script> -->
+	<!-- Main JS -->
+	<script src="./assets/js/main.js"></script>
+
+	<script>
+		$(function () {
+			const blogArray = [
+				{
+					title: "箱根の社員旅行",
+					picutre: "assets/img/blog/blog-1.jpg",
+					date: "2023年12月08日",
+					author: "櫻",
+					content:
+						"イノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークス",
+				},
+				{
+					title: "箱根の社員旅行",
+					picutre: "assets/img/blog/blog-2.jpg",
+					date: "2023年12月08日",
+					author: "櫻",
+					content:
+						"イノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークス",
+				},
+				{
+					title: "箱根の社員旅行",
+					picutre: "assets/img/blog/blog-3.jpg",
+					date: "2023年12月08日",
+					author: "櫻",
+					content:
+						"イノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークスイノベークス",
+				},
+				{
+					title: "日本橋人形町に移転い",
+					picutre: "assets/img/blog/blog-4.jpg",
+					date: "2016年06月08日",
+					author: "何",
+					content:
+						"〒103-0013 東京都中央区日本橋人形町2丁目15-16 高道ビル6FTEL 03－5652－8018／FAX 03－5652－8028　",
+				},
+				{
+					title: "復興支援",
+					picutre: "assets/img/blog/blog-5.jpg",
+					date: "2016年04月28日",
+					author: "何",
+					content:
+						"熊本地震の被災者の方々に対するお見舞いと復興支援のため、関連団体を通じて、義援金を拠出させていただきました。被災地の早い復旧を心からお祈り申し上げます。",
+				},
+				{
+					title: "第1回 日・中 企業情報化ソフトウェアサミットに参加",
+					picutre: "assets/img/blog/blog-6.jpg",
+					date: "2011年11月10日",
+					author: "何",
+					content:
+						"平成23年10月28日(金)～30日(日)中国徐州市にて社団法人コンピュータソフトウェア協会と中国ソフトウェア産業協会(CSIA)は「第1回日・中企業情報化ソフトウェアサミット」を共催しました。弊社代表取締役何　建強がサミットに参加し、日中双方の企業様との交流を深めました。",
+				},
+				{
+					title: "「東北地方太平洋沖地震」の支援について",
+					picutre: "assets/img/blog/blog-7.jpg",
+					date: "2011年03月18日",
+					author: "何",
+					content:
+						"平成23年10月28日(金)～30日(日)中国徐州市にて社団法人コンピュータソフトウェア協会と中国ソフトウェア産業協会(CSIA)は「第1回日・中企業情報化ソフトウェアサミット」を共催しました。弊社代表取締役何　建強がサミットに参加し、日中双方の企業様との交流を深めました。",
+				},
+			];
+
+			blogArray.forEach((element, index) => {
+				let temp = `<div class="col-lg-4 col-md-6">
+					<div class="blog-single-item">
+						<div class="blog-image">
+								<img src="${element.picutre}" alt="image"> 
+						</div>
+						<div class="blog-description">
+							<ul class="blog-info">
+								<li>
+									<i class="bi bi-person-circle"></i>${element.author}
+								</li>
+								<li>
+									<i class="bi bi-calendar-check"></i>${element.date}
+								</li>
+							</ul>
+							<div class="blog-text">
+								<h3>
+									${element.title}
+								</h3>
+								<p class="overflow-ellipsis ">${element.content}</p>
+								<div class="blog-btn" data-item-id="${index}"> <a href="" class="read-more"><i class="bi bi-arrow-right-short"></i> Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>`;
+				if (index < 3) {
+					$("#near-blog").append(temp);
+				}
+			});
+
+			//　記事
+			let infoDialog = $('[data-remodal-id="dialog-info"]').remodal({
+				hashTracking: false,
+				closeOnOutsideClick: true,
+			});
+			$(".blog-btn").on("click", (e) => {
+				e.preventDefault()
+				let index = $(e.currentTarget).data("item-id")
+				// alert(index)
+				$("#dialog-info-content #title").text(blogArray[index].title);
+				$("#dialog-info-content #date").text(blogArray[index].date);
+				$("#dialog-info-content #atuhor").text(blogArray[index].atuhor);
+				$("#dialog-info-content p").html(blogArray[index].content);
+
+				infoDialog.open()
+			})
+
+
+			const partnerArray = [
+				{
+					name: "カルピス株式会社",
+					picutre: "assets/img/partner/client-1.png"
+				},
+				{
+					name: "伊藤忠テクノソリューションズ株式会社(CTC)",
+					picutre: "assets/img/partner/client-2.png"
+				},
+				{
+					name: "株式会社ソルクシーズ（証券コード：4284）",
+					picutre: "assets/img/partner/client-3.png"
+				},
+				{
+					name: "コムチュア株式会社（証券コード：3844）",
+					picutre: "assets/img/partner/client-4.png"
+				},
+				{
+					name: "株式会社SHIFT（証券コード：3697）",
+					picutre: "assets/img/partner/client-5.png"
+				},
+				{
+					name: "SATT株式会社(学校法人 駿河台学園グループ)",
+					picutre: "assets/img/partner/client-6.png"
+				},
+				{
+					name: "パーソルプロセス＆テクノロジー株式会社",
+					picutre: "assets/img/partner/client-7.png"
+				},
+				{
+					name: "グリーンブルー株式会社",
+					picutre: "assets/img/partner/client-8.png"
+				}
+			];
+
+			partnerArray.forEach((element, index) => {
+				let temp = `<div class="partner-item">
+					<a href="#">
+						<img src="${element.picutre}" alt="image">
+					</a>
+					<div class="name">${element.name}</div>
+				</div>`;
+				$(".partner-list").append(temp);
+
+			});
+
+
+		});
+	</script>
+
+
+	<!-- AOS Animation JS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		// 初始化AOS动画
+		AOS.init({
+			duration: 800,
+			easing: 'ease-out-cubic',
+			once: true,
+			offset: 100,
+			delay: 0,
+			mirror: false,
+			anchorPlacement: 'top-bottom'
+		});
+
+		// 平滑滚动
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					target.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+			});
+		});
+
+		// 导航栏滚动效果增强
+		let lastScroll = 0;
+		window.addEventListener('scroll', () => {
+			const currentScroll = window.pageYOffset;
+			const navbar = document.querySelector('.navbar-area');
+
+			if (currentScroll > 100) {
+				navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+			} else {
+				navbar.style.boxShadow = 'none';
+			}
+
+			lastScroll = currentScroll;
+		});
+	</script>
+</body>
+
+</html>
